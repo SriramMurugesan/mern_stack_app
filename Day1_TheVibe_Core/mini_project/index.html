@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheVibe - Creative Core</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Modern Font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 scroll-smooth">
+
+    <!-- Header & Navigation -->
+    <header class="fixed w-full bg-white/80 backdrop-blur-md z-50 shadow-sm transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-extrabold tracking-tighter text-indigo-600">TheVibe.</a>
+            
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex space-x-8 text-sm font-semibold text-gray-600">
+                <a href="#services" class="hover:text-indigo-600 transition">Services</a>
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+            
+            <!-- CTA Button -->
+            <button class="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-semibold hover:bg-indigo-700 hover:scale-105 transition-all">Get Started</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative h-screen flex items-center justify-center bg-indigo-900 text-white overflow-hidden">
+            <!-- Background Image overlay -->
+            <div class="absolute inset-0 bg-black/60 z-10"></div>
+            <!-- Beautiful Unsplash Placeholder Image -->
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=2000&q=80" alt="Team collaborating" class="absolute inset-0 w-full h-full object-cover mix-blend-overlay">
+            
+            <!-- Content Container -->
+            <div class="relative z-20 text-center px-4 max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight drop-shadow-lg">Design at the speed of thought.</h1>
+                <p class="text-lg md:text-2xl text-gray-200 mb-10 max-w-2xl mx-auto drop-shadow-md">Master AI-assisted development. We bring ideas to reality faster than ever with cutting-edge prompt engineering.</p>
+                
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#services" class="bg-white text-indigo-900 px-8 py-4 rounded-full font-bold hover:bg-gray-100 hover:scale-105 transition-all shadow-lg text-lg">Explore Services</a>
+                    <a href="#" class="border border-white text-white px-8 py-4 rounded-full font-bold hover:bg-white/10 hover:scale-105 transition-all text-lg backdrop-blur-sm">View Our Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Grid Section -->
+        <section id="services" class="py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <!-- Section Header -->
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold mb-4 text-gray-900">Core Principles</h2>
+                    <p class="text-gray-600 max-w-xl mx-auto text-lg">Learn the fundamentals of building stunning interfaces through prompt engineering.</p>
+                </div>
+                
+                <!-- 3-Column Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <!-- Service Card 1 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold shadow-sm">1</div>
+                        <h3 class="text-xl font-bold mb-3">Semantic HTML5</h3>
+                        <p class="text-gray-600">The structure of the web. Build accessible, SEO-friendly layouts that make sense to humans and AI alike.</p>
+                    </div>
+                    
+                    <!-- Service Card 2 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold shadow-sm">2</div>
+                        <h3 class="text-xl font-bold mb-3">CSS Flexbox</h3>
+                        <p class="text-gray-600">Master modern layouts. Align, justify, and distribute space across responsive web containers seamlessly.</p>
+                    </div>
+                    
+                    <!-- Service Card 3 -->
+                    <div class="bg-gray-50 p-8 rounded-2xl border border-gray-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                        <div class="w-14 h-14 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6 text-2xl font-bold shadow-sm">3</div>
+                        <h3 class="text-xl font-bold mb-3">AI Prompting</h3>
+                        <p class="text-gray-600">Translate human language into rapid, scalable, and responsive code using advanced prompt architecture.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 border-t border-gray-800">
+        <div class="container mx-auto px-6 text-center">
+            <h4 class="text-white text-3xl font-extrabold mb-4 tracking-tight">TheVibe.</h4>
+            <p class="mb-6">&copy; 2026 TheVibe Core Curriculum. All rights reserved.</p>
+            <div class="space-x-6">
+                <a href="#" class="hover:text-white transition">Privacy Policy</a>
+                <a href="#" class="hover:text-white transition">Terms of Service</a>
+                <a href="#" class="hover:text-white transition">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
