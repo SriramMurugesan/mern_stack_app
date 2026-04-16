@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalX Change | Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="converter-box">
+        <header>
+            <h1>GlobalX</h1>
+            <p>Real-time exchange rates</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <label>Amount</label>
+                <input type="number" id="amount" placeholder="0.00" value="100">
+            </div>
+
+            <div class="dropdown-row">
+                <div class="select-group">
+                    <label>From</label>
+                    <select id="from-currency">
+                        <option value="USD" selected>USD - US Dollar</option>
+                        <option value="INR">INR - Indian Rupee</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - Pound Sterling</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                    </select>
+                </div>
+
+                <div class="swap-icon">⇄</div>
+
+                <div class="select-group">
+                    <label>To</label>
+                    <select id="to-currency">
+                        <option value="USD">USD - US Dollar</option>
+                        <option value="INR" selected>INR - Indian Rupee</option>
+                        <option value="EUR">EUR - Euro</option>
+                        <option value="GBP">GBP - Pound Sterling</option>
+                        <option value="JPY">JPY - Japanese Yen</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="result-display">
+                <p id="exchange-rate">Fetching rate...</p>
+                <h2 id="converted-amount">--</h2>
+            </div>
+
+            <button id="convert-btn">Convert Now</button>
+        </main>
+        
+        <footer>
+            Data provided by Open Exchange Rates API
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
