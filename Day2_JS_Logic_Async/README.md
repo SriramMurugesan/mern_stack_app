@@ -21,6 +21,10 @@ Focus: Handling time and data.
 - **Project Folder**: `lab_currency_converter/`
 - **Mini App**: `mini_app/`
 
+### 🎯 Interview Preparation
+- [**Interview Preparation Guide**](Interview_Preparation.md)
+- **Focus**: Closures, Call Stack, Event Loop, and Async/Await.
+
 ---
 
 ## 🛠️ How to run the examples

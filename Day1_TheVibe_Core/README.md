@@ -10,6 +10,10 @@ This folder contains the complete curriculum for teaching students the fundament
 - **[Module 2: Structure & Style](./Module_2_Structure_and_Style.md)** (11:15 AM - 1:15 PM) - Focuses on Semantic HTML5, CSS Box Model, Flexbox, and responsive Tailwind CSS via prompts.
 - **[Module 3: Lab - Build a Landing Page](./Module_3_Lab_Build_Landing_Page.md)** (2:00 PM - 4:15 PM) - A hands-on lab where students use AI to prompt, iterate, and refine a complete landing page.
 
+### 🎯 Interview Preparation
+- [**Interview Preparation Guide**](Interview_Preparation.md)
+- **Focus**: Semantic HTML, CSS Box Model, Tailwind, and AI Prompting.
+
 ---
 
 ## 🛠️ The Day 1 Mini Project (`/mini_project/index.html`)
