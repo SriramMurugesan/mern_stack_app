@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Backend Dev Blog 👨‍💻</h1>
+            <p>Day 5: Master MVC & File Systems</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="posts-grid">
+            <% posts.forEach(post => { %>
+                <article class="post-card">
+                    <h2><%= post.title %></h2>
+                    <p><%= post.content.substring(0, 100) %>...</p>
+                    <a href="/post/<%= post.id %>" class="btn">Read Article</a>
+                </article>
+            <% }); %>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MERN Stack Training - Day 5</p>
+    </footer>
+</body>
+</html>

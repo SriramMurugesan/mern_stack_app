@@ -1,0 +1,46 @@
+/* --- BASIC CSS (Day 1: Box Model & Flexbox) --- */
+
+:root {
+  --primary: #4f46e5;
+  --bg: #f3f4f6;
+  --text: #1f2937;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  display: flex; /* Flexbox (Day 1) */
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+main {
+  flex: 1; /* Grows to fill space (Day 1: Flexbox) */
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  padding: 2rem; /* Padding (Day 1: Box Model) */
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  border: 1px solid #e5e7eb; /* Border (Day 1: Box Model) */
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+}

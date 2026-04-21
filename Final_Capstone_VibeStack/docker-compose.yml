@@ -1,0 +1,29 @@
+# --- DOCKER COMPOSE (Day 8: DevOps & Orchestration) ---
+# This file lets us launch multiple containers (Database + Server) with one command.
+
+version: '3.8'
+
+services:
+  # The Backend Service
+  api:
+    build: ./server
+    ports:
+      - "5000:5000"
+    environment:
+      # Injecting environment variables (Day 4/8)
+      NODE_ENV: production
+      MONGO_URI: ${MONGO_URI}
+      JWT_SECRET: ${JWT_SECRET}
+    depends_on:
+      - db # Wait for the database to start first
+
+  # The Local Database Service (Optional: for local dev - Day 6)
+  db:
+    image: mongo:latest
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:

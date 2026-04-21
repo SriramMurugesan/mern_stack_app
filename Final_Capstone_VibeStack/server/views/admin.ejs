@@ -1,0 +1,32 @@
+<!-- --- ADMIN VIEW (Day 5: View Engines & Templates) --- -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <!-- Link to static CSS (Day 5: Static Content) -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the <%= title %></h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Current Server Status</h2>
+            <!-- Dynamic data passed from Express controller (Day 5) -->
+            <p>Status: <strong><%= status %></strong></p>
+            <p>Time: <%= new Date().toLocaleTimeString() %></p>
+        </section>
+
+        <section class="info">
+            <h3>Bootcamp Day 5 Reminder</h3>
+            <p>This page is rendered on the server using EJS. No React involved here!</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 VibeStack Capstone</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Backend Dev Blog 👨‍💻</h1>
+            <a href="/" class="back-link">&larr; Back to Home</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <% if (post) { %>
+            <article class="single-post">
+                <h1><%= post.title %></h1>
+                <div class="meta">Posted on April 20, 2026</div>
+                <hr>
+                <div class="content">
+                    <%= post.content %>
+                </div>
+            </article>
+        <% } else { %>
+            <div class="error-page">
+                <h1>404 - Post Not Found</h1>
+                <p>Sorry, the article you are looking for doesn't exist.</p>
+                <a href="/" class="btn">Go Home</a>
+            </div>
+        <% } %>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 MERN Stack Training - Day 5</p>
+    </footer>
+</body>
+</html>
